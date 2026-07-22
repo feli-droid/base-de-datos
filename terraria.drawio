@@ -1,0 +1,184 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="MER Terraria" id="mer-terraria-1">
+    <mxGraphModel dx="2571" dy="1324" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="jugador" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="Jugador" vertex="1">
+          <mxGeometry height="60" width="160" x="1050" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="a_idjugador" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=4;" value="idJugador" vertex="1">
+          <mxGeometry height="60" width="140" x="880" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="a_usuario" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" value="usuario" vertex="1">
+          <mxGeometry height="60" width="140" x="1240" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e_jug1" edge="1" parent="1" source="a_idjugador" style="endArrow=none;html=1;" target="jugador">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_jug2" edge="1" parent="1" source="a_usuario" style="endArrow=none;html=1;" target="jugador">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="posee" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;" value="Posee" vertex="1">
+          <mxGeometry height="90" width="160" x="600" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="crea" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;" value="Crea" vertex="1">
+          <mxGeometry height="90" width="160" x="1500" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="e_jp" edge="1" parent="1" source="jugador" style="endArrow=none;html=1;fontSize=11;" target="posee" value="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_jc" edge="1" parent="1" source="jugador" style="endArrow=none;html=1;fontSize=11;" target="crea" value="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="personaje" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="Personaje" vertex="1">
+          <mxGeometry height="60" width="160" x="600" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="mundo" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="Mundo" vertex="1">
+          <mxGeometry height="60" width="160" x="1500" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="e_pp" edge="1" parent="1" source="posee" style="endArrow=none;html=1;fontSize=11;" target="personaje" value="N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_cm" edge="1" parent="1" source="crea" style="endArrow=none;html=1;fontSize=11;" target="mundo" value="N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_idpersonaje" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=4;" value="idPersonaje" vertex="1">
+          <mxGeometry height="60" width="140" x="430" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="a_nombrep" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" value="nombre" vertex="1">
+          <mxGeometry height="60" width="140" x="790" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="e_p1" edge="1" parent="1" source="a_idpersonaje" style="endArrow=none;html=1;" target="personaje">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_p2" edge="1" parent="1" source="a_nombrep" style="endArrow=none;html=1;" target="personaje">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_idmundo" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=4;" value="idMundo" vertex="1">
+          <mxGeometry height="60" width="140" x="1330" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="a_nombremundo" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" value="nombreMundo" vertex="1">
+          <mxGeometry height="60" width="140" x="1690" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="e_m1" edge="1" parent="1" source="a_idmundo" style="endArrow=none;html=1;" target="mundo">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_m2" edge="1" parent="1" source="a_nombremundo" style="endArrow=none;html=1;" target="mundo">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="recolecta" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;" value="Recolecta" vertex="1">
+          <mxGeometry height="90" width="160" x="300" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="derrota" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;" value="Derrota" vertex="1">
+          <mxGeometry height="90" width="160" x="900" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="contiene" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;" value="Contiene" vertex="1">
+          <mxGeometry height="90" width="160" x="1500" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="e_pr" edge="1" parent="1" source="personaje" style="endArrow=none;html=1;fontSize=11;" target="recolecta" value="N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_pd" edge="1" parent="1" source="personaje" style="endArrow=none;html=1;fontSize=11;" target="derrota" value="N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_mc" edge="1" parent="1" source="mundo" style="endArrow=none;html=1;fontSize=11;" target="contiene" value="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_cantidad" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" value="cantidad" vertex="1">
+          <mxGeometry height="60" width="140" x="310" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="e_rc" edge="1" parent="1" source="recolecta" style="endArrow=none;html=1;" target="a_cantidad">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_fecha" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" value="fecha" vertex="1">
+          <mxGeometry height="60" width="140" x="910" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="e_df" edge="1" parent="1" source="derrota" style="endArrow=none;html=1;" target="a_fecha">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="item" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="Item" vertex="1">
+          <mxGeometry height="60" width="160" x="300" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="jefe" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="Jefe" vertex="1">
+          <mxGeometry height="60" width="160" x="900" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="e_ri" edge="1" parent="1" source="recolecta" style="endArrow=none;html=1;fontSize=11;" target="item" value="M">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_dj" edge="1" parent="1" source="derrota" style="endArrow=none;html=1;fontSize=11;" target="jefe" value="M">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bioma_outer" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#6c8ebf;" value="" vertex="1">
+          <mxGeometry height="68" width="168" x="1496" y="896" as="geometry" />
+        </mxCell>
+        <mxCell id="bioma" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="Bioma" vertex="1">
+          <mxGeometry height="60" width="160" x="1500" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="e_cb" edge="1" parent="1" source="contiene" style="endArrow=none;html=1;fontSize=11;" target="bioma" value="N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_iditem" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=4;" value="idItem" vertex="1">
+          <mxGeometry height="60" width="140" x="130" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="a_nombreitem" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" value="nombre" vertex="1">
+          <mxGeometry height="60" width="140" x="490" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="e_i1" edge="1" parent="1" source="a_iditem" style="endArrow=none;html=1;" target="item">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_i2" edge="1" parent="1" source="a_nombreitem" style="endArrow=none;html=1;" target="item">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_idjefe" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=4;" value="idJefe" vertex="1">
+          <mxGeometry height="60" width="140" x="730" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="a_nombrejefe" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" value="nombre" vertex="1">
+          <mxGeometry height="60" width="140" x="1090" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="e_j1" edge="1" parent="1" source="a_idjefe" style="endArrow=none;html=1;" target="jefe">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_j2" edge="1" parent="1" source="a_nombrejefe" style="endArrow=none;html=1;" target="jefe">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_idbioma" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=4;" value="idBioma" vertex="1">
+          <mxGeometry height="60" width="140" x="1330" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="a_nombrebioma" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" value="nombre" vertex="1">
+          <mxGeometry height="60" width="140" x="1690" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="e_b1" edge="1" parent="1" source="a_idbioma" style="endArrow=none;html=1;" target="bioma">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_b2" edge="1" parent="1" source="a_nombrebioma" style="endArrow=none;html=1;" target="bioma">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="habita" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;" value="Habita" vertex="1">
+          <mxGeometry height="90" width="160" x="1500" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="e_bh" edge="1" parent="1" source="bioma" style="endArrow=none;html=1;fontSize=11;" target="habita" value="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="npc" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="NPC" vertex="1">
+          <mxGeometry height="60" width="160" x="1500" y="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="e_hn" edge="1" parent="1" source="habita" style="endArrow=none;html=1;fontSize=11;" target="npc" value="N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_idnpc" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=4;" value="idNpc" vertex="1">
+          <mxGeometry height="60" width="140" x="1330" y="1100" as="geometry" />
+        </mxCell>
+        <mxCell id="a_nombrenpc" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" value="nombre" vertex="1">
+          <mxGeometry height="60" width="140" x="1690" y="1100" as="geometry" />
+        </mxCell>
+        <mxCell id="e_n1" edge="1" parent="1" source="a_idnpc" style="endArrow=none;html=1;" target="npc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_n2" edge="1" parent="1" source="a_nombrenpc" style="endArrow=none;html=1;" target="npc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
