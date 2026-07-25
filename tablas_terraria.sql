@@ -45,7 +45,7 @@ create table recolecta (
     idrecolecta int primary key,
     idpersonaje int,
     iditem int,
-    cantidad varchar(50),
+    cantidad int,
     foreign key (idpersonaje) references personaje(idpersonaje),
     foreign key (iditem) references item(iditem)
 );
